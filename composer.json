@@ -53,7 +53,7 @@
         "test:lint": "pint --test",
         "test:refactor": "rector --dry-run",
         "test:types": "phpstan analyse",
-        "test:unit": "./vendor/bin/pest",
+        "test:unit": "pest",
         "test": [
             "@test:lint",
             "@test:refactor",

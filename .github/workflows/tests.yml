@@ -40,8 +40,5 @@ jobs:
       - name: Install PHP dependencies
         run: composer install --no-interaction --no-progress --ansi
 
-      - name: Run PhpUnit test folder
-        run: vendor/phpunit/phpunit/phpunit --configuration phpunit.xml --testsuite Unit
-
       - name: Tests
         run: composer test
