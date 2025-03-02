@@ -1,0 +1,14 @@
+<?php
+
+namespace App\Strategies\{{ name }}\Pipelines;
+
+use Closure;
+
+class {{ name }}Pipeline
+{
+    public function handle($value, Closure $next)
+    {
+        // Pipeline logic here
+        return $next($value);
+    }
+}

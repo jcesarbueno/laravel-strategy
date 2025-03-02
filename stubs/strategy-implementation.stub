@@ -1,0 +1,10 @@
+<?php
+
+namespace App\Strategies\{{ name }}\Implementations;
+
+use App\Strategies\{{ name }}\Contracts\{{ name }}StrategyContract;
+
+class {{ implementation }} implements {{ name }}StrategyContract
+{
+{{ methods }}
+}

@@ -1,0 +1,76 @@
+{
+    "name": "jcesarbueno/laravel-strategy",
+    "description": "Pacote Laravel para implementação de Strategy, Factory e Chain of Responsibility",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Jcesarbueno\\LaravelStrategy\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Jcesarbueno\\LaravelStrategy\\Tests\\": "tests",
+            "App\\": "vendor/orchestra/testbench-core/laravel/app"
+        }
+    },
+    "authors": [
+        {
+            "name": "jcesarbueno",
+            "email": "jcesarrbueno@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.0",
+        "illuminate/support": "^10.48"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Jcesarbueno\\LaravelStrategy\\LaravelStrategyServiceProvider"
+            ],
+            "aliases": {
+                "LaravelStrategy": "Jcesarbueno\\LaravelStrategy\\LaravelStrategyFacade"
+            }
+        }
+    },
+    "require-dev": {
+        "pestphp/pest": "^2.36",
+        "orchestra/testbench": "^8.33",
+        "laravel/pint": "^1.20",
+        "phpstan/phpstan": "^2.1",
+        "rector/rector": "^2.0",
+        "pestphp/pest-plugin-laravel": "^2.4"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "scripts": {
+        "lint": "pint",
+        "refactor": "rector",
+        "test:lint": "pint --test",
+        "test:refactor": "rector --dry-run",
+        "test:types": "phpstan analyse",
+        "test:unit": "./vendor/bin/pest",
+        "test": [
+            "@test:lint",
+            "@test:refactor",
+            "@test:types",
+            "@test:unit"
+        ],
+        "post-autoload-dump": [
+            "@clear",
+            "@prepare"
+        ],
+        "clear": "@php vendor/bin/testbench package:purge-skeleton --ansi",
+        "prepare": "@php vendor/bin/testbench package:discover --ansi",
+        "build": "@php vendor/bin/testbench workbench:build --ansi",
+        "serve": [
+            "Composer\\Config::disableProcessTimeout",
+            "@build",
+            "@php vendor/bin/testbench serve --ansi"
+        ]
+    }
+}

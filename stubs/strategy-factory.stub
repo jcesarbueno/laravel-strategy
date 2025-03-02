@@ -1,0 +1,16 @@
+<?php
+
+namespace App\Strategies\{{ name }}\Factories;
+
+use App\Strategies\{{ name }}\Contracts\{{ name }}StrategyContract;
+{{ implementationClasses }}
+
+class {{ name }}Factory
+{
+    public static function make($value): {{ name }}StrategyContract
+    {
+        return match ($value) {
+{{ implementations }}
+        };
+    }
+}
