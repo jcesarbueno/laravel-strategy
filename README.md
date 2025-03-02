@@ -20,14 +20,16 @@ This package provides an **Artisan command** to quickly scaffold strategies, kee
 Require the package via Composer:
 
 ```bash
-    composer require jcesarbueno/laravel-strategy
+composer require jcesarbueno/laravel-strategy
 ```
+
+---
 
 # ⚙️ How It Works
 Run the following Artisan command:
 
 ```bash
-    php artisan make:strategy PaymentMethod
+php artisan make:strategy PaymentMethod
 ```
 
 You will be prompted with interactive questions:
