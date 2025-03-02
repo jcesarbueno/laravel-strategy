@@ -3,7 +3,6 @@
 declare(strict_types=1);
 
 use Illuminate\Support\Facades\File;
-use Jcesarbueno\LaravelStrategy\Commands\MakeStrategyCommand;
 
 use function Pest\Laravel\artisan;
 
