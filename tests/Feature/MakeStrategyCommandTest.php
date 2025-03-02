@@ -30,12 +30,6 @@ function createBlankStrategy(): void
         ->assertExitCode(0);
 }
 
-it('can run the command successfully', function () {
-    $this
-        ->artisan(MakeStrategyCommand::class, ['name' => 'PaymentMethod'])
-        ->assertSuccessful();
-});
-
 test('it creates a strategy without inform the name and do not create another with the same name', function () {
     File::deleteDirectory(app_path('Strategies'));
     createBlankStrategy();
