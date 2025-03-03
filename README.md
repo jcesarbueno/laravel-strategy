@@ -38,7 +38,7 @@ This package provides an **Artisan command** to quickly scaffold strategies, kee
 Require the package via Composer:
 
 ```bash
-composer require jcesarbueno/laravel-strategy
+composer require jcesarbueno/laravel-strategy:^1.0
 ```
 
 ---
