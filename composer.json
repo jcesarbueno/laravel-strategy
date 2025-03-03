@@ -2,7 +2,7 @@
     "name": "jcesarbueno/laravel-strategy",
     "description": "A Laravel package for generating Strategy Design Pattern, along with Factory and Chain of Responsibility support.\nThis package provides an Artisan command to quickly scaffold strategies, keeping your Laravel project well-structured.",
     "type": "library",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "keywords": ["strategy", "pattern", "laravel", "design"],
     "license": "MIT",
     "autoload": {
