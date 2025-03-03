@@ -153,7 +153,7 @@ final class MakeStrategyCommand extends Command
             }
 
             if ($pipeline) {
-                $formattedMethods[] = "    public function getPipelines(): array \n    {\n      return [      \n      //\n        ];\n    }";
+                $formattedMethods[] = "    public function getPipelines(): array \n    {\n        return [\n            //\n        ];\n    }";
             }
 
             $this->copyStubToApp('strategy-implementation', "Strategies/{$path}/Implementations/{$implementation}.php", [
