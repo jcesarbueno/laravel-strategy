@@ -1,7 +1,8 @@
 {
     "name": "jcesarbueno/laravel-strategy",
-    "description": "Pacote Laravel para implementação de Strategy, Factory e Chain of Responsibility",
+    "description": "A Laravel package for generating Strategy Design Pattern, along with Factory and Chain of Responsibility support.\nThis package provides an Artisan command to quickly scaffold strategies, keeping your Laravel project well-structured.",
     "type": "library",
+    "keywords": ["strategy", "pattern", "laravel", "design"],
     "license": "MIT",
     "autoload": {
         "psr-4": {
@@ -47,6 +48,8 @@
             "pestphp/pest-plugin": true
         }
     },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "scripts": {
         "lint": "pint",
         "refactor": "rector",
