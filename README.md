@@ -1,3 +1,21 @@
+
+<!-- BADGES_START -->
+[![Latest Version][badge-release]][packagist]
+[![PHP Version][badge-php]][php]
+[![Tests][badge-tests]][tests]
+[![Total Downloads][badge-downloads]][downloads]
+
+[badge-tests]: https://github.com/jcesarbueno/laravel-strategy/actions/workflows/tests.yml/badge.svg
+[badge-release]: https://img.shields.io/packagist/v/jcesarbueno/laravel-strategy.svg?style=flat-square&label=release
+[badge-php]: https://img.shields.io/packagist/php-v/jcesarbueno/laravel-strategy.svg?style=flat-square
+[badge-downloads]: https://img.shields.io/packagist/dt/jcesarbueno/laravel-strategy.svg?style=flat-square&colorB=mediumvioletred
+
+[packagist]: https://packagist.org/packages/jcesarbueno/laravel-strategy
+[php]: https://php.net
+[downloads]: https://packagist.org/packages/jcesarbueno/laravel-strategy
+[tests]: https://github.com/jcesarbueno/laravel-strategy/actions/workflows/tests.yml
+<!-- BADGES_END -->
+
 # 🎯 Laravel Strategy Package
 
 A Laravel package for generating **Strategy Design Pattern**, along with **Factory** and **Chain of Responsibility** support.  
